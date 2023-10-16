@@ -1,38 +1,69 @@
+:root {
+  --main-br-color: #dedede;
+}
+
+li {
+  list-style-type: none;
+}
+
 .App {
-  text-align: center;
+  min-width: 400px;
+  max-width: 900px;
+  margin: 40px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list {
+  list-style-type: none;
+  border: solid 1px var(--main-br-color);;
+  padding: 0;
+  width: 30%;
+  user-select: none;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list__item {
+  border-bottom: solid 1px var(--main-br-color);;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list__item:last-child {
+  border-bottom: 0;
+}
+
+.details__list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+}
+
+.details {
+  margin-left: 40px;
+  width: 40%;
+}
+
+.details__item {
+  border: solid 1px var(--main-br-color);
+}
+
+.itemContent {
+  border-bottom: solid 1px var(--main-br-color);
+  padding: 10px;
+}
+
+.itemContent:last-child {
+  border-bottom: 0;
+}
+
+.itemContent:nth-child(2) {
+  padding-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  border-bottom: solid 1px var(--main-br-color);;
+}
+
+.selected {
+  background-color: #0f7ffa;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
