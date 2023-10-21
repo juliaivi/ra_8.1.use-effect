@@ -13,9 +13,6 @@ export default function Lists({url}) {
     useEffect(() => {
         setLoading(true);
         fetch(`${url}users.json`)
-        .then((request) => {
-            return request;
-          })
         .then((response) => {
             if (!response.ok) {
                 throw new Error()
